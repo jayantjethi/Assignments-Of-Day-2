@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Various Arrays Methods</title>
+</head>
+<body>
+<!-- Various Array Methods    -->
+<script>
+    // Method 1
+// The JavaScript method toString() converts an array to a string of (comma separated) array values.
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+// Banana,Orange,Apple,Mango
+
+    // Method 2
+// The join() method also joins all array elements into a string.
+// It behaves just like toString(), but in addition you can specify the separator:
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
+// Banana * Orange * Apple * Mango
+
+    //  Method 3
+    // The pop() method returns the value that was "popped out":
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x = fruits.pop();      // the value of x is "Mango"
+
+    //   Method 4
+    // The push() method adds a new element to an array (at the end):
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");       //  Adds a new element ("Kiwi") to fruits
+
+        //  Method 5
+        // The shift() method removes the first array element and "shifts" all other elements to a lower index.
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();            // Removes the first element "Banana" from fruits
+
+        //   Method 6
+        // The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon");    // Adds a new element "Lemon" to fruits
+
+            //   Method 7
+            // Since JavaScript arrays are objects, elements can be deleted by using the JavaScript operator delete:
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+delete fruits[0];           // Changes the first element in fruits to undefined
+
+        //  Method 8
+        // The splice() method can be used to add new items to an array:
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+
+        //    Method 9
+        // The concat() method creates a new array by merging (concatenating) existing arrays:
+
+// Example (Merging Two Arrays)
+var myGirls = ["Cecilie", "Lone"];
+var myBoys = ["Emil", "Tobias", "Linus"];
+var myChildren = myGirls.concat(myBoys);   // Concatenates (joins) myGirls and myBoys
+
+            //    Method 10
+            // The slice() method slices out a piece of an array into a new array.
+
+// This example slices out a part of an array starting from array element 1 ("Orange"):
+
+Example
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1);      
+
+</script>
+</body>
+</html>

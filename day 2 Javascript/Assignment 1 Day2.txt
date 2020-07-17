@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input And Output</title>
+</head>
+<body>
+   
+<script>
+var age =  prompt("what is your age");
+console.log(age);	
+</script>
+</body>
+</html> 

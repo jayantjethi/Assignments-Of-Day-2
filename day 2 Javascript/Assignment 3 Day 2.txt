@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ask the user</title>
+</head>
+<body>
+   
+<script>
+     var age = prompt("What is your age");
+     if(age<=21)
+     {
+         console.log("The Person Cannot drink");
+     }
+</script>
+</body>
+</html> 
